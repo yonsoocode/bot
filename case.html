@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MagicDrop - NFT Gift Cases</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles case.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-bear"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>MagicDrop</h1>
+                    <p>NFT Gift Cases</p>
+                </div>
+            </div>
+            <div class="balance-container">
+                <div class="balance">
+                    <i class="fas fa-coins"></i>
+                    <span id="balance">42</span>
+                </div>
+                <button class="top-up-btn" id="topUpBtn">
+                    <i class="fas fa-plus"></i>
+                    Пополнить
+                </button>
+            </div>
+        </header>
+        <div id="main-page" class="page-section active">
+            <h2 class="section-title">Выберите кейс</h2>
+            <div class="cases-container">
+                <div class="case-card" data-case="start">
+                    <div class="case-image">
+                        <img src="https://nft.fragment.com/gift/joyfulbundle-10953.medium.jpg" alt="Start Case">
+                    </div>
+                    <div class="case-name">Start Case</div>
+                    <div class="case-desc">Содержит случайные NFT подарки с разной редкостью и стоимостью</div>
+                    <div class="case-price">
+                        <i class="fas fa-coins"></i>
+                        0.008 TON
+                    </div>
+                    <button class="spin-btn">
+                        <i class="fas fa-sync-alt"></i>
+                        Крутить
+                    </button>
+                </div>
+                <div class="case-card" data-case="magic">
+                    <div class="case-image">
+                        <img src="https://nft.fragment.com/gift/berrybox-1337.medium.jpg" alt="Magic Gift Case">
+                    </div>
+                    <div class="case-name">Magic Gift Case</div>
+                    <div class="case-desc">Содержит редкие и легендарные NFT подарки</div>
+                    <div class="case-price">
+                        <i class="fas fa-coins"></i>
+                        0.25 TON
+                    </div>
+                    <button class="spin-btn">
+                        <i class="fas fa-sync-alt"></i>
+                        Крутить
+                    </button>
+                </div>
+                <div class="case-card" data-case="mystic">
+                    <div class="case-image">
+                        <img src="https://nft.fragment.com/gift/lootbag-7631.medium.jpg" alt="Mystic Vault Case">
+                    </div>
+                    <div class="case-name">Mystic Vault Case</div>
+                    <div class="case-desc">Загадочный сундук, полный тайн.</div>
+                    <div class="case-price">
+                        <i class="fas fa-coins"></i>
+                        3.42 TON
+                    </div>
+                    <button class="spin-btn">
+                        <i class="fas fa-sync-alt"></i>
+                        Крутить
+                    </button>
+                </div>
+                <div class="case-card" data-case="eternal">
+                    <div class="case-image">
+                        <img src="https://nft.fragment.com/gift/heartlocket-875.medium.jpg" alt="Eternal Case">
+                    </div>
+                    <div class="case-name">Eternal Case</div>
+                    <div class="case-desc">Бесконечные возможности внутри.</div>
+                    <div class="case-price">
+                        <i class="fas fa-coins"></i>
+                        0.25 TON
+                    </div>
+                    <button class="spin-btn">
+                        <i class="fas fa-sync-alt"></i>
+                        Крутить
+                    </button>
+                </div>
+                <div class="case-card" data-case="shadow">
+                    <div class="case-image">
+                        <img src="https://nft.fragment.com/gift/iongem-555.medium.jpg" alt="Shadow Cache Case">
+                    </div>
+                    <div class="case-name">Shadow Cache Case</div>
+                    <div class="case-desc">Таинственный теневой кэш.</div>
+                    <div class="case-price">
+                        <i class="fas fa-coins"></i>
+                        0.25 TON
+                    </div>
+                    <button class="spin-btn">
+                        <i class="fas fa-sync-alt"></i>
+                        Крутить
+                    </button>
+                </div>
+                <div class="case-card" data-case="golden">
+                    <div class="case-image">
+                        <img src="https://nft.fragment.com/gift/swisswatch-19988.medium.jpg" alt="Golden Satchel Case">
+                    </div>
+                    <div class="case-name">Golden Satchel Case</div>
+                    <div class="case-desc">Золотой саквояж с сюрпризом.</div>
+                    <div class="case-price">
+                        <i class="fas fa-coins"></i>
+                        0.85 TON
+                    </div>
+                    <button class="spin-btn">
+                        <i class="fas fa-sync-alt"></i>
+                        Крутить
+                    </button>
+                </div>
+                <div class="case-card" data-case="celestial">
+                    <div class="case-image">
+                        <img src="https://nft.fragment.com/gift/sharptongue-4346.medium.jpg" alt="Celestial Case">
+                    </div>
+                    <div class="case-name">Celestial Case</div>
+                    <div class="case-desc">Небесные сокровища ждут вас.</div>
+                    <div class="case-price">
+                        <i class="fas fa-coins"></i>
+                        1 TON
+                    </div>
+                    <button class="spin-btn">
+                        <i class="fas fa-sync-alt"></i>
+                        Крутить
+                    </button>
+                </div>
+                <div class="case-card" data-case="arcane">
+                    <div class="case-image">
+                        <img src="https://nft.fragment.com/gift/durovscap-2222.medium.jpg" alt="Arcane Pouch Case">
+                    </div>
+                    <div class="case-name">Arcane Pouch Case</div>
+                    <div class="case-desc">Магический мешок тайн.</div>
+                    <div class="case-price">
+                        <i class="fas fa-coins"></i>
+                        21 TON
+                    </div>
+                    <button class="spin-btn">
+                        <i class="fas fa-sync-alt"></i>
+                        Крутить
+                    </button>
+                </div>
+                <div class="case-card" data-case="prismatic">
+                    <div class="case-image">
+                        <img src="https://nft.fragment.com/gift/lootbag-7018.medium.jpg" alt="Prismatic Case">
+                    </div>
+                    <div class="case-name">Prismatic Case</div>
+                    <div class="case-desc">Переливающийся призматический кейс.</div>
+                    <div class="case-price">
+                        <i class="fas fa-coins"></i>
+                        42 TON
+                    </div>
+                    <button class="spin-btn">
+                        <i class="fas fa-sync-alt"></i>
+                        Крутить
+                    </button>
+                </div>
+                <div class="case-card" data-case="royal">
+                    <div class="case-image">
+                        <img src="https://nft.fragment.com/gift/heartlocket-269.medium.jpg" alt="Royal Coffer Case">
+                    </div>
+                    <div class="case-name">Royal Coffer Case</div>
+                    <div class="case-desc">Королевский сундук богатства.</div>
+                    <div class="case-price">
+                        <i class="fas fa-coins"></i>
+                        1.71 TON
+                    </div>
+                    <button class="spin-btn">
+                        <i class="fas fa-sync-alt"></i>
+                        Крутить
+                    </button>
+                </div>
+                <div class="case-card" data-case="fabled">
+                    <div class="case-image">
+                        <img src="https://nft.fragment.com/gift/diamondring-27070.medium.jpg" alt="Fabled Bag Case">
+                    </div>
+                    <div class="case-name">Fabled Bag Case</div>
+                    <div class="case-desc">Легендарная сумка сказок.</div>
+                    <div class="case-price">
+                        <i class="fas fa-coins"></i>
+                        8.564429 TON
+                    </div>
+                    <button class="spin-btn">
+                        <i class="fas fa-sync-alt"></i>
+                        Крутить
+                    </button>
+                </div>
+                <div class="case-card" data-case="lunar">
+                    <div class="case-image">
+                        <img src="https://nft.fragment.com/gift/nekohelmet-1244.medium.jpg" alt="Lunar Pack Case">
+                    </div>
+                    <div class="case-name">Lunar Pack Case</div>
+                    <div class="case-desc">Сумка с лунными сокровищами.</div>
+                    <div class="case-price">
+                        <i class="fas fa-coins"></i>
+                        17.133429 TON
+                    </div>
+                    <button class="spin-btn">
+                        <i class="fas fa-sync-alt"></i>
+                        Крутить
+                    </button>
+                </div>
+            </div>
+            <h2 class="section-title">Ваш подарок</h2>
+            <div class="result-container" id="result-container">
+                <div class="empty-state">
+                    <div class="empty-state-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Еще нет подарка</h3>
+                    <p>Выберите кейс и нажмите "Крутить", чтобы получить свой подарок</p>
+                </div>
+            </div>
+            <h2 class="section-title">История открытий</h2>
+            <div class="history-container">
+                <div id="history-list" class="history-list">
+                    <div class="empty-state">
+                        <p>Пока нет истории открытий. Откройте кейс, чтобы увидеть свою историю.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="upgrade-page" class="page-section">
+            <h2 class="section-title">Улучшить подарок</h2>
+            <div class="upgrade-container">
+                <div class="upgrade-form">
+                    <div class="upgrade-column">
+                        <h3 class="upgrade-title">Выберите подарок</h3>
+                        <select class="upgrade-select" id="gift-select">
+                            <option value="">Выберите подарок для улучшения</option>
+                        </select>
+                        <div id="selected-gift-preview" class="item-display" style="display: none;"></div>
+                    </div>
+                    <div class="upgrade-column">
+                        <h3 class="upgrade-title">Выберите цель</h3>
+                        <select class="upgrade-select" id="target-select">
+                            <option value="">Выберите цель улучшения</option>
+                        </select>
+                        <div id="selected-target-preview" class="item-display" style="display: none;"></div>
+                    </div>
+                </div>
+                <div class="upgrade-info">
+                    <div class="upgrade-chance" id="upgrade-chance">Шанс: 0%</div>
+                    <div class="upgrade-cost" id="upgrade-cost">Стоимость: 0.000000 TON</div>
+                    <button class="upgrade-btn" id="upgrade-btn" disabled>
+                        <i class="fas fa-magic"></i>
+                        Улучшить подарок
+                    </button>
+                </div>
+            </div>
+            <h2 class="section-title">Мои подарки</h2>
+            <div class="inventory-container">
+                <div id="inventory-grid" class="inventory-grid">
+                    <div class="empty-state">
+                        <p>У вас пока нет подарков. Откройте кейс, чтобы получить подарки.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rating-page" class="page-section">
+            <h2 class="section-title">Рейтинг пользователей</h2>
+            <div class="rating-container">
+                <table class="rating-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Пользователь</th>
+                            <th>Баланс</th>
+                            <th>Заработано TON</th>
+                        </tr>
+                    </thead>
+                    <tbody id="rating-table-body"></tbody>
+                </table>
+                <div id="no-rating-data" class="empty-state" style="display: none;">
+                    <p>Пока нет данных о рейтинге пользователей.</p>
+                </div>
+            </div>
+        </div>
+        <div id="profile-page" class="page-section">
+            <h2 class="section-title">Профиль</h2>
+            <div class="profile-container">
+                <div class="empty-state">
+                    <div class="empty-state-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>В разработке</h3>
+                    <p>Раздел профиля находится в разработке и будет доступен в ближайшее время.</p>
+                </div>
+            </div>
+        </div>
+        <div id="history-page" class="page-section">
+            <h2 class="section-title">История операций</h2>
+            <div class="operations-history">
+                <div id="operations-list">
+                    <div class="empty-state">
+                        <p>Пока нет истории операций.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="bottom-nav">
+        <a href="#" class="nav-item active" data-page="main">
+            <i class="fas fa-home"></i>
+            Главная
+        </a>
+        <a href="#" class="nav-item" data-page="upgrade">
+            <i class="fas fa-magic"></i>
+            Апгрейд
+        </a>
+        <a href="#" class="nav-item" data-page="rating">
+            <i class="fas fa-trophy"></i>
+            Рейтинг
+        </a>
+        <a href="#" class="nav-item" data-page="profile">
+            <i class="fas fa-user"></i>
+            Профиль
+        </a>
+        <a href="#" class="nav-item" data-page="history">
+            <i class="fas fa-history"></i>
+            История
+        </a>
+    </nav>
+    <div class="modal" id="topUpModal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModal">
+                <i class="fas fa-times"></i>
+            </button>
+            <h3 class="modal-title">Пополнить баланс</h3>
+            <div class="empty-state">
+                <div class="empty-state-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h3>В разработке</h3>
+                <p>Функция пополнения баланса находится в разработке и будет доступна в ближайшее время.</p>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="spinModal">
+        <div class="modal-content" style="max-width: 800px;">
+            <button class="close-modal" id="closeSpinModal">
+                <i class="fas fa-times"></i>
+            </button>
+            <h3 class="modal-title">Открываем кейс</h3>
+            <div id="spinResult" class="result-container" style="margin: 10px 0 0; min-height: 360px;"></div>
+        </div>
+    </div>
+    <div class="toast" id="toast"></div>
+</body>
+</html>
